@@ -2,7 +2,7 @@
 import { jsx, Container, Box } from 'theme-ui';
 import SectionHeader from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
-const faqs = [
+const about = [
   {
     title: 'How to contact with riders emergency ?',
     contents: (
@@ -46,9 +46,9 @@ const faqs = [
     ),
   },
 ];
-export default function Faq() {
+export default function About() {
   return (
-    <Box as="section" id="faq" variant="section.faq">
+    <Box as="section" id="about" variant="section.about">
       <Container>
         <SectionHeader
           title="Do you have any quesiton"
@@ -63,7 +63,7 @@ export default function Faq() {
             my: -4,
           }}
         >
-          <Accordion items={faqs} />
+          <Accordion items={about} />
         </Box>
       </Container>
     </Box>

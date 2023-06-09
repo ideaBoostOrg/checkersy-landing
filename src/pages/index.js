@@ -10,7 +10,7 @@ import IntroVideo from 'sections/intro-video';
 import UsefulFeatures from 'sections/useful-features';
 import Widgets from 'sections/widgets';
 import Pricing from 'sections/pricing';
-import Faq from 'sections/faq';
+import About from 'sections/about';
 
 export default function IndexPage() {
   return (
@@ -18,13 +18,13 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Startup Landing 010" />
         <Banner />
+        <About />
         <UltimateFeatures />
         <Features />
         <IntroVideo />
         <UsefulFeatures />
         <Widgets />
         <Pricing />
-        <Faq />
       </Layout>
     </ThemeProvider>
   );
