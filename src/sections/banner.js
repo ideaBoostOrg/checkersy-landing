@@ -67,6 +67,7 @@ const styles = {
   button: {
     display: ['none', 'flex'],
     mt: [45, 45, 45, 25, 25],
+    backgroundColor: "#2ED573",
   },
   clients: {
     display: 'flex',
