@@ -4,44 +4,34 @@ import SectionHeader from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
 const about = [
   {
-    title: 'How to contact with riders emergency ?',
+    title: 'QR Code Integration',
     contents: (
       <div>
-        Get your website ads tests delivered at let collect sample from the
-        victory of the managements that supplies best design system which
-        guidelines ever with multiple features.
+        Enable seamless attendance marking using QR codes for efficient and accurate tracking.
       </div>
     ),
   },
   {
-    title: 'App installation failed, how to update system information?',
+    title: 'User-Friendly Interface',
     contents: (
       <div>
-        Rhino skin maybe thick but it can be quite sensitive to sunburns and
-        insect bites which is why they like wallow so much – when the mud dries
-        it acts as protection from the sunburns and insects.
+        Intuitive and easy-to-use platform for students, lecturers, and administrators.
       </div>
     ),
   },
   {
-    title: `Website response taking time, how to improve?`,
+    title: `Real-time Reporting`,
     contents: (
       <div>
-        Get your blood tests delivered at the home collect a sample from
-        management news. Get your blood tests delivered at the home collect a
-        sample from management news. Get your blood tests delivered at the home
-        collect a sample from management news. Get your blood tests delivered at
-        the home.
+        Access comprehensive attendance reports instantly for effective monitoring and analysis.
       </div>
     ),
   },
   {
-    title: `New update fixed all bug and issues`,
+    title: `Admin Control Panel`,
     contents: (
       <div>
-        If you’re looking to hunt a unicorn, but don’t know where to begin, try
-        Lake Superior State University in Sault Ste. Marie, Michigan. Since
-        1971, the university has issued permits to unicorn questers.
+        Empower administrators with advanced management tools and permissions.
       </div>
     ),
   },
@@ -51,8 +41,10 @@ export default function About() {
     <Box as="section" id="about" variant="section.about">
       <Container>
         <SectionHeader
-          title="Do you have any quesiton"
-          description="Our support team ready to help you, please contact with them"
+          // title="Do you have any quesiton"
+          description="Checkersy is a cutting-edge attendance marking platform that revolutionizes the way attendance 
+          management is handled. With its QR-based solution, Checkersy brings efficiency and convenience to students, 
+          lecturers, and administrators alike. Here's how Checkersy transforms attendance management:"
         />
         <Box
           sx={{
