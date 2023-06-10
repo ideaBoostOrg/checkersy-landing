@@ -4,30 +4,38 @@ import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
 import Image from 'components/image';
 
-import banner from 'assets/images/widgets.png';
+import admin from 'assets/images/admin.jpg';
 import checkFilledCircle from 'assets/images/icons/check-circle-filled.png';
 
-const Widgets = () => {
+const Admin = () => {
   return (
     <Box as="section" id="widgets" variant="section.widgets">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
-            <Image src={banner} alt="widgets" />
+            <Image src={admin} alt="widgets" />
           </Box>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Ultimate widgets of collection that will be used anywhere"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              title="Streamline Attendance Administration"
+              description="Manage attendance across multiple courses and departments seamlessly with Checkersy's comprehensive administrative features."
             />
             <Text sx={styles.listItem} as="p">
-              <Image src={checkFilledCircle} alt="check icon" />
-              Unlimited design possibility
+              <Image sx={styles.img} src={checkFilledCircle} alt="check icon" />
+              Centralized Control: Monitor attendance records, generate reports, and manage users from a single, powerful admin control panel.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Completely responsive features
+              Streamlined Admin Control: Manage subjects, student groups, and assign them to lecturers, all within a centralized panel.
+            </Text>
+            <Text sx={styles.listItem} as="p">
+              <Image src={checkFilledCircle} alt="check icon" />
+              Effortlessly generate reports: Easily generate attendance reports for lectures, subjects, or specific criteria, providing valuable insights for improved attendance management.
+            </Text>
+            <Text sx={styles.listItem} as="p">
+              <Image src={checkFilledCircle} alt="check icon" />
+              Integration and Scalability: Seamlessly integrate Checkersy with your existing systems and scale it to meet your institution's growing needs.
             </Text>
             <Box sx={styles.explore}>
               <LearnMore path="#!" label="Explore More" />
@@ -39,7 +47,7 @@ const Widgets = () => {
   );
 };
 
-export default Widgets;
+export default Admin;
 
 const styles = {
   contentWrapper: {
