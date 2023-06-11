@@ -22,7 +22,7 @@ const Admin = () => {
               description="Manage attendance across multiple courses and departments seamlessly with Checkersy's comprehensive administrative features."
             />
             <Text sx={styles.listItem} as="p">
-              <Image sx={styles.img} src={checkFilledCircle} alt="check icon" />
+              <Image src={checkFilledCircle} alt="check icon" />
               Centralized Control: Monitor attendance records, generate reports, and manage users from a single, powerful admin control panel.
             </Text>
             <Text sx={styles.listItem} as="p">
@@ -74,6 +74,9 @@ const styles = {
     alignItems: 'center',
     img: {
       mr: '10px',
+      mt: '15px',
+      mb: 'auto',
+      minWidth: 'auto',
     },
   },
   explore: {

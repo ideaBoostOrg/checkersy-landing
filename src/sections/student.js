@@ -22,7 +22,7 @@ const Student = () => {
               description="With Checkersy, tracking your attendance has never been simpler. Simply scan the QR code in your classes and stay up-to-date with your attendance record."
             />
             <Text sx={styles.listItem} as="p">
-              <Image sx={styles.img} src={checkFilledCircle} alt="check icon" />
+              <Image src={checkFilledCircle} alt="check icon" />
               Quick and Convenient: Scan the QR code with your smartphone and mark your attendance within seconds.
             </Text>
             <Text sx={styles.listItem} as="p">
@@ -70,6 +70,9 @@ const styles = {
     alignItems: 'center',
     img: {
       mr: '10px',
+      mt: '15px',
+      mb: 'auto',
+      minWidth: 'auto',
     },
   },
   explore: {

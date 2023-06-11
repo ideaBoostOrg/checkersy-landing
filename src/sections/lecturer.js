@@ -22,7 +22,7 @@ const Lecturer = () => {
               description="Simplify attendance marking and focus on what you love—teaching. Checkersy automates the attendance process, making it efficient and hassle-free."
             />
             <Text sx={styles.listItem} as="p">
-              <Image sx={styles.img} src={checkFilledCircle} alt="check icon" />
+              <Image src={checkFilledCircle} alt="check icon" />
               Time-Saving Solution: Eliminate manual attendance marking and reduce administrative work.
             </Text>
             <Text sx={styles.listItem} as="p">
@@ -74,6 +74,9 @@ const styles = {
     alignItems: 'center',
     img: {
       mr: '10px',
+      mt: '15px',
+      mb: 'auto',
+      minWidth: 'auto',
     },
   },
   explore: {
