@@ -10,6 +10,11 @@ import IntroVideo from 'sections/intro-video';
 import UsefulFeatures from 'sections/useful-features';
 import Pricing from 'sections/pricing';
 import About from 'sections/about';
+import Lecturer from 'sections/lecturer';
+import Admin from 'sections/admin';
+import Student from 'sections/student';
+import About from 'sections/about';
+
 
 export default function IndexPage() {
   return (

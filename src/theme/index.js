@@ -114,7 +114,7 @@ export default {
       pb: [7, 7, 7, 7, 150],
     },
     widgets: {
-      backgroundColor: '#FFF7F5',
+      backgroundColor: '#FFFFFF',
       pt: [7, 7, 7, 7, 8],
       pb: [7, 7, 7, 7, 6, 8],
     },
