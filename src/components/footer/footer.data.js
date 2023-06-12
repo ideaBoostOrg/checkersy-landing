@@ -129,23 +129,11 @@ export const menuItems = [
 
 export const footerNav = [
   {
-    path: '#!',
-    label: 'Home',
+    path: 'contactus@ideaboost.tech',
+    label: 'Email',
   },
   {
-    path: '#!',
-    label: 'Advertise',
-  },
-  {
-    path: '#!',
-    label: 'Supports',
-  },
-  {
-    path: '#!',
-    label: 'Marketing',
-  },
-  {
-    path: '#!',
-    label: 'FAQ',
+    path: 'https://ideaboost.tech',
+    label: 'Visit us',
   },
 ];
