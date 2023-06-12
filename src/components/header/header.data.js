@@ -8,11 +8,15 @@ export default [
     label: 'About',
   },
   {
+    path: 'product',
+    label: 'Product',
+  },
+  {
     path: 'ultimate-feature',
     label: 'Feature',
   },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-  },
+  // {
+  //   path: 'pricing',
+  //   label: 'Pricing',
+  // },
 ];
