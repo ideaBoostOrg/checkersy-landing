@@ -140,7 +140,7 @@ const styles = {
       margin: '0 20px',
     },
     '.active': {
-      color: 'primary',
+      color: '#2ED573',
     },
   },
   explore: {
@@ -149,6 +149,7 @@ const styles = {
     bottom: 40,
     left: '50%',
     transform: 'translateX(-50%)',
+    backgroundColor: "#2ED573",
   },
   closeButton: {
     height: '32px',

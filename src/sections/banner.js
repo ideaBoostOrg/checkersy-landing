@@ -4,23 +4,39 @@ import banner from 'assets/images/banner.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
+import { NavLink } from 'components/link';
 
 const Banner = () => {
+
+
+
+  const func = () => {
+    alert("about")
+    return (
+      <NavLink
+        path='about'
+        label='About'
+      />
+    );
+  }
+
+
   return (
     <Box id="home" as="section" variant="section.banner">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Professional Communication For Your Team
+              Streamline Attendance Management with Checkersy
             </Heading>
             <Text as="p" sx={styles.text}>
-              Get your blood tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              The QR-based seamless solution for students, lecturers, and administrators.
             </Text>
             <Button variant="primary" sx={styles.button}>
-              Explore Now
+              <NavLink
+                path='about'
+                label='Get Started'
+              />
             </Button>
             <Box sx={styles.clients}>
               <Image src={paypal} alt="paypal" />
@@ -67,6 +83,7 @@ const styles = {
   button: {
     display: ['none', 'flex'],
     mt: [45, 45, 45, 25, 25],
+    backgroundColor: "#2ED573",
   },
   clients: {
     display: 'flex',
