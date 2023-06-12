@@ -8,8 +8,9 @@ import { rgba } from 'polished';
 import Image from 'components/image';
 
 
-import email from 'assets/images/icons/email-logo.png';
-import visitus from 'assets/images/icons/globe.png';
+import email from 'assets/images/icons/email.webp';
+import visitus from 'assets/images/icons/visitUs.png';
+import linkedin from 'assets/images/icons/linkedin_logo.png';
 
 export default function Footer() {
   return (
@@ -23,22 +24,25 @@ export default function Footer() {
       </Container>
       <Container>
         <Box sx={styles.footerInner}>
-          <Box as="ul" sx={styles.footerNav}>
-            <li sx={styles.footerNavList} >
-              <Image sx={styles.footerNavImg} src={email} alt="widgets" />
-              <Link path={'contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" />
-            </li>
-            <li sx={styles.footerNavList} >
-              <Image sx={styles.footerNavImg} src={visitus} alt="widgets" />
-              <Link path={'https://ideaboost.tech'} label={'Visit us'} variant="footer" />
-            </li>
-          </Box>
           <Box sx={styles.copyright}>
             <Logo />
-            <Text as="span">
+            {/* <Text as="span">
               Copyright by {new Date().getFullYear()} RedQ, Inc
-            </Text>
+            </Text> */}
           </Box>
+          <Box as="ul" sx={styles.footerNav}>
+              <Link path={'contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" >
+                <Image sx={styles.footerNavImg} src={email} alt="widgets" />
+              </Link>
+              <Link path={'https://ideaboost.tech'} variant="footer" sx={styles.link}>
+                <Image sx={styles.footerNavImg} src={visitus} alt="widgets" />
+              </Link>
+            {/* <li sx={styles.footerNavList} >   */}
+              <Link path={'https://www.linkedin.com/company/ideaboosts/'} variant="footer" sx={styles.link}>
+                <Image sx={styles.footerNavImg} src={linkedin} alt="widgets" />
+              </Link>
+            {/* </li> */}
+          </Box>    
         </Box>
       </Container>
     </Box>
@@ -57,13 +61,13 @@ const styles = {
       'repeat(3, 1fr)',
       'repeat(5, 1fr)',
     ],
+    
   },
   footerInner: {
     borderTop: `1px solid #D9E0E7`,
     display: ['flex', null, 'flex'],
-    flexDirection: ['column'],
-    // alignItems: 'center',
-    // justifyContent: 'space-between',
+    flexDirection: ['row'],
+    justifyContent: 'space-between',
     padding: '35px 0 40px',
     '@media only screen and (max-width: 400px)': {
       pb: 10,
@@ -86,11 +90,10 @@ const styles = {
     margin: ['15px 0 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
-    flexDirection: ['column'],
+    flexDirection: ['row'],
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, 'flex-start'],
     'li + li': {
-      // ml: ['18px', '18px', '20px'],
       '@media only screen and (max-width: 400px)': {
         mb: '10px',
       },
@@ -105,11 +108,18 @@ const styles = {
     flexDirection: ['row'],
   },
   footerNavImg: {
-    width: ['35px'],
-    height: ['20px'],
+    width: ['30px'],
+    height: ['30px'],
     display: 'flex',
     mt: 'auto',
     mb: 'auto',
     mr: '15px',
+  },
+  footerCopyRight: {
+    ml: '5px',
+  },
+  link:{
+    textDecoration: 'none',
+    fontSize: ' 11pt',
   }
 };
