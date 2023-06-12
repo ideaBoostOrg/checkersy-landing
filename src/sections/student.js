@@ -4,30 +4,34 @@ import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
 import Image from 'components/image';
 
-import banner from 'assets/images/widgets.png';
+import student from 'assets/images/student.jpg';
 import checkFilledCircle from 'assets/images/icons/check-circle-filled.png';
 
-const Widgets = () => {
+const Student = () => {
   return (
     <Box as="section" id="widgets" variant="section.widgets">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
-            <Image src={banner} alt="widgets" />
+            <Image src={student} alt="widgets" />
           </Box>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Ultimate widgets of collection that will be used anywhere"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              title="Manage Your Attendance with Ease"
+              description="With Checkersy, tracking your attendance has never been simpler. Simply scan the QR code in your classes and stay up-to-date with your attendance record."
             />
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Unlimited design possibility
+              Quick and Convenient: Scan the QR code with your smartphone and mark your attendance within seconds.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Completely responsive features
+              Accessible Anywhere: Use Checkersy on any device, ensuring you never miss a check-in.
+            </Text>
+            <Text sx={styles.listItem} as="p">
+              <Image src={checkFilledCircle} alt="check icon" />
+              Track Attendance History: Students can effortlessly view their past attendance records, keeping them informed and accountable.
             </Text>
             <Box sx={styles.explore}>
               <LearnMore path="#!" label="Explore More" />
@@ -39,7 +43,7 @@ const Widgets = () => {
   );
 };
 
-export default Widgets;
+export default Student;
 
 const styles = {
   contentWrapper: {
@@ -66,6 +70,9 @@ const styles = {
     alignItems: 'center',
     img: {
       mr: '10px',
+      mt: '15px',
+      mb: 'auto',
+      minWidth: 'auto',
     },
   },
   explore: {
