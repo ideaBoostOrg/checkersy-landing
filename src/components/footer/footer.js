@@ -5,6 +5,11 @@ import { Link } from 'components/link';
 import FooterWidget from 'components/footer-widget';
 import { menuItems, footerNav } from './footer.data';
 import { rgba } from 'polished';
+import Image from 'components/image';
+
+
+import email from 'assets/images/icons/email-logo.png';
+import visitus from 'assets/images/icons/globe.png';
 
 export default function Footer() {
   return (
@@ -18,19 +23,21 @@ export default function Footer() {
       </Container>
       <Container>
         <Box sx={styles.footerInner}>
+          <Box as="ul" sx={styles.footerNav}>
+            <li sx={styles.footerNavList} >
+              <Image sx={styles.footerNavImg} src={email} alt="widgets" />
+              <Link path={'contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" />
+            </li>
+            <li sx={styles.footerNavList} >
+              <Image sx={styles.footerNavImg} src={visitus} alt="widgets" />
+              <Link path={'https://ideaboost.tech'} label={'Visit us'} variant="footer" />
+            </li>
+          </Box>
           <Box sx={styles.copyright}>
             <Logo />
             <Text as="span">
               Copyright by {new Date().getFullYear()} RedQ, Inc
             </Text>
-          </Box>
-
-          <Box as="ul" sx={styles.footerNav}>
-            {footerNav.map(({ path, label }, i) => (
-              <li key={i}>
-                <Link path={path} key={i} label={label} variant="footer" />
-              </li>
-            ))}
           </Box>
         </Box>
       </Container>
@@ -53,13 +60,15 @@ const styles = {
   },
   footerInner: {
     borderTop: `1px solid #D9E0E7`,
-    display: ['block', null, 'flex'],
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    display: ['flex', null, 'flex'],
+    flexDirection: ['column'],
+    // alignItems: 'center',
+    // justifyContent: 'space-between',
     padding: '35px 0 40px',
     '@media only screen and (max-width: 400px)': {
       pb: 10,
     },
+    pl: ['10px'],
   },
   copyright: {
     display: ['flex'],
@@ -77,10 +86,11 @@ const styles = {
     margin: ['15px 0 0', '15px 0 0', '0'],
     padding: 0,
     display: ['flex'],
+    flexDirection: ['column'],
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, 'flex-start'],
     'li + li': {
-      ml: ['18px', '18px', '20px'],
+      // ml: ['18px', '18px', '20px'],
       '@media only screen and (max-width: 400px)': {
         mb: '10px',
       },
@@ -90,4 +100,16 @@ const styles = {
     },
     cursor: 'pointer',
   },
+  footerNavList: {
+    display: ['flex'],
+    flexDirection: ['row'],
+  },
+  footerNavImg: {
+    width: ['35px'],
+    height: ['20px'],
+    display: 'flex',
+    mt: 'auto',
+    mb: 'auto',
+    mr: '15px',
+  }
 };
