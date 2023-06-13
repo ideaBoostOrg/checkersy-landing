@@ -14,23 +14,23 @@ export default function Product() {
             <Heading sx={styles.title}>
               Attendance Management Perfected
             </Heading>
-            <Text sx={styles.text} as="p">
+            <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
               Access effortlessly from any device 
             </Text>
-            <Text sx={styles.text} as="p">
+            <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
               Admin and Lecturer-Friendly Desktop Version
             </Text>
-            <Text sx={styles.text} as="p">
+            <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
               Student-Focused Mobile App
             </Text>
-            <Text sx={styles.text} as="p">
+            <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
               Anytime, Anywhere Access 
             </Text>
-            <Text sx={styles.text} as="p">
+            <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
               A visually appealing and responsive interface 
             </Text>
@@ -50,7 +50,7 @@ const styles = {
     gridTemplateColumns: 'repeat(2, 1fr)',
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: [null, null, null, null, null, '100vh'],
+    minHeight: [null, null, null, null, null, null],
     pt: [100, null, null, 120, 130, 120, 0],
   },
   content: {
@@ -62,6 +62,7 @@ const styles = {
     lineHeight: 1.33,
     letterSpacing: '-1px',
     color: 'textSecondary',
+    mb: ['14px', '16px'],
   },
   text: {
     fontSize: ['14px', '14px', '14px', '16px', '16px', '18px'],
@@ -100,6 +101,7 @@ const styles = {
       mb: 'auto',
       minWidth: 'auto',
     },
+    mt: ['12px', '12px'],
   },
 };
 
