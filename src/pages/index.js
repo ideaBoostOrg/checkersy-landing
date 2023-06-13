@@ -13,6 +13,8 @@ import About from 'sections/about';
 import Lecturer from 'sections/lecturer';
 import Admin from 'sections/admin';
 import Student from 'sections/student';
+import About from 'sections/about';
+import Product from 'sections/product';
 
 
 export default function IndexPage() {
@@ -22,14 +24,15 @@ export default function IndexPage() {
         <SEO title="Startup Landing 010" />
         <Banner />
         <About />
-        <UltimateFeatures />
+        <Product />
+        {/* <UltimateFeatures />
         <Features />
         <IntroVideo />
-        <UsefulFeatures />
+        <UsefulFeatures /> */}
         <Student />
         <Lecturer />
         <Admin />
-        <Pricing />
+        {/* <Pricing /> */}
       </Layout>
     </ThemeProvider>
   );
