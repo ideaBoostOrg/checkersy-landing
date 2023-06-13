@@ -55,6 +55,7 @@ const styles = {
   },
   heading: {
     textAlign: 'left',
+    fontWeight: 500,
     mb: ['20px'],
     mt: [0, 0, 0, 0, '-70px'],
     h2: {
