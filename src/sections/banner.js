@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button, Image } from 'theme-ui';
-import banner from 'assets/images/banner.png';
+import home from 'assets/images/home.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
@@ -8,26 +8,13 @@ import { NavLink } from 'components/link';
 
 const Banner = () => {
 
-
-
-  const func = () => {
-    alert("about")
-    return (
-      <NavLink
-        path='about'
-        label='About'
-      />
-    );
-  }
-
-
   return (
     <Box id="home" as="section" variant="section.banner">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Streamline Attendance Management with Checkersy
+              Effortless Attendance Management
             </Heading>
             <Text as="p" sx={styles.text}>
               The QR-based seamless solution for students, lecturers, and administrators.
@@ -45,7 +32,7 @@ const Banner = () => {
             </Box> */}
           </Box>
           <Box sx={styles.illustration}>
-            <Image src={banner} alt="banner" />
+            <Image src={home} alt="banner" />
           </Box>
         </Box>
       </Container>

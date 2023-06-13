@@ -40,8 +40,13 @@ export default function About() {
       <Container>
       <SectionHeading
           sx={styles.heading}
-          title="Go Beyond unlimited features"
-          description="Checkersy is a cutting-edge attendance marking platform that revolutionizes the way attendance management is handled. With its QR-based solution, Checkersy brings efficiency and convenience to students, lecturers, and administrators alike. Here's how Checkersy transforms attendance management."
+          title="Introducing Checkersy"
+          description="Effortless Attendance Management. Our QR-based solution revolutionizes how educational institutions 
+          track attendance. Students simply scan the QR code to mark their attendance accurately and instantly. Real-time 
+          reporting provides valuable insights for educators. Administrators have full control via an intuitive panel to 
+          manage courses, permissions, and generate comprehensive reports. Seamlessly integrating with existing systems, 
+          Checkersy ensures a smooth transition. Automated notifications keep everyone informed. Say goodbye to manual 
+          processes and hello to streamlined attendance management. Experience the power of Checkersy today. Get started now."
         />
         <Box sx={styles.features}>
           {data?.map((item) => (
