@@ -12,7 +12,7 @@ export default [
     label: 'Product',
   },
   {
-    path: 'ultimate-feature',
+    path: 'featureset',
     label: 'Feature',
   },
   // {
