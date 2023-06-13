@@ -28,9 +28,9 @@ export default function Footer() {
             </Text>
           </Box>
           <Box as="ul" sx={styles.footerNav}>
-              <Link path={'contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" >
+              <a href={'mailto:contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" sx={styles.link}>
                 <Image sx={styles.footerNavImg} src={email} alt="widgets" />
-              </Link>
+              </a>
               <a href={'https://ideaboost.tech'} variant="footer" sx={styles.linkVisit}>
                 <Image sx={styles.footerNavImg} src={visitus} alt="widgets" />
               </a>
