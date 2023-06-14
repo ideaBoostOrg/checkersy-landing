@@ -18,24 +18,19 @@ const Student = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Manage Your Attendance with Ease"
+              title="Features for Students"
               description="With Checkersy, tracking your attendance has never been simpler. Simply scan the QR code in your classes and stay up-to-date with your attendance record."
             />
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Quick and Convenient: Scan the QR code with your smartphone and mark your attendance within seconds.
-            </Text>
+              Scan the QR code, mark attendance instantly.            </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Accessible Anywhere: Use Checkersy on any device, ensuring you never miss a check-in.
-            </Text>
+              Accessible anywhere, never miss a check-in.            </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Track Attendance History: Students can effortlessly view their past attendance records, keeping them informed and accountable.
+              Track Attendance History.
             </Text>
-            <Box sx={styles.explore}>
-              <LearnMore path="#!" label="Explore More" />
-            </Box>
           </Box>
         </Box>
       </Container>
@@ -54,6 +49,7 @@ const styles = {
   },
   heading: {
     textAlign: 'left',
+    fontWeight: 500,
     mb: ['20px'],
     mt: [0, 0, 0, 0, '-70px'],
     h2: {

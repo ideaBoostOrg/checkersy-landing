@@ -18,28 +18,25 @@ const Lecturer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Effortless Attendance Management"
+              title="Features for Lecturers"
               description="Simplify attendance marking and focus on what you love—teaching. Checkersy automates the attendance process, making it efficient and hassle-free."
             />
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Time-Saving Solution: Eliminate manual attendance marking and reduce administrative work.
+              Save time: Eliminate manual attendance, reduce admin work.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Accurate and Reliable: Ensure precise attendance tracking with QR code scanning, minimizing errors.
+              Precise attendance: Reliable QR code scanning, minimal errors.            
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Real-time Attendance Count: Instantly track the number of students present in your class.
+              Real-time count: Instantly track class attendance.            
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Manual Attendance Adding: Easily add attendance for students facing device issues.
+              Easy manual addition: Add attendance for students with device issues.
             </Text>
-            <Box sx={styles.explore}>
-              <LearnMore path="#!" label="Explore More" />
-            </Box>
           </Box>
         </Box>
       </Container>
@@ -58,6 +55,7 @@ const styles = {
   },
   heading: {
     textAlign: 'left',
+    fontWeight: 500,
     mb: ['20px'],
     mt: [0, 0, 0, 0, '-70px'],
     h2: {

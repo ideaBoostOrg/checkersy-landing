@@ -18,28 +18,25 @@ const Admin = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Streamline Attendance Administration"
+              title="Features for Administration"
               description="Manage attendance across multiple courses and departments seamlessly with Checkersy's comprehensive administrative features."
             />
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Centralized Control: Monitor attendance records, generate reports, and manage users from a single, powerful admin control panel.
+              Centralized control: Monitor attendance, generate reports, manage users from one admin panel.            
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Streamlined Admin Control: Manage subjects, student groups, and assign them to lecturers, all within a centralized panel.
+              Streamlined admin control: Manage subjects, groups, assign lecturers in one panel.            
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Effortlessly generate reports: Easily generate attendance reports for lectures, subjects, or specific criteria, providing valuable insights for improved attendance management.
+              Effortless report generation: Obtain valuable attendance insights for improved management.            
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Integration and Scalability: Seamlessly integrate Checkersy with your existing systems and scale it to meet your institution's growing needs.
+              Seamless integration and scalability: Integrate Checkersy, scale with ease.            
             </Text>
-            <Box sx={styles.explore}>
-              <LearnMore path="#!" label="Explore More" />
-            </Box>
           </Box>
         </Box>
       </Container>
@@ -58,6 +55,7 @@ const styles = {
   },
   heading: {
     textAlign: 'left',
+    fontWeight: 500,
     mb: ['20px'],
     mt: [0, 0, 0, 0, '-70px'],
     h2: {
