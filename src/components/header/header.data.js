@@ -13,7 +13,7 @@ export default [
   },
   {
     path: 'featureset',
-    label: 'Feature',
+    label: 'Features',
   },
   // {
   //   path: 'pricing',
