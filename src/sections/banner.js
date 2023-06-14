@@ -32,7 +32,7 @@ const Banner = () => {
             </Box> */}
           </Box>
           <Box sx={styles.illustration}>
-            <Image src={home} alt="banner" />
+            <Image src={home} alt="banner" sx={styles.image}/>
           </Box>
         </Box>
       </Container>
@@ -88,7 +88,7 @@ const styles = {
     mt: ['30px', '30px', 0],
     mb: ['60px', '60px', 0],
     img: {
-      maxWidth: ['100%', '100%', '100%', '100%', '90%', '90%', '100%'],
+      maxWidth: ['60%', '60%', '60%', '60%', '50%', '50%', '60%'],
     },
   },
 };

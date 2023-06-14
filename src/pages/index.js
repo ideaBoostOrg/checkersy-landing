@@ -14,6 +14,7 @@ import Admin from 'sections/admin';
 import Student from 'sections/student';
 import About from 'sections/about';
 import Product from 'sections/product';
+import Featureset from 'sections/featureset';
 
 
 export default function IndexPage() {
@@ -28,9 +29,10 @@ export default function IndexPage() {
         <Features />
         <IntroVideo />
         <UsefulFeatures /> */}
-        <Student />
+        {/* <Student />
         <Lecturer />
-        <Admin />
+        <Admin /> */}
+        <Featureset />
         {/* <Pricing /> */}
       </Layout>
     </ThemeProvider>

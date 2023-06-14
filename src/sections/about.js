@@ -1,35 +1,35 @@
 /** @jsx jsx */
-import { jsx, Container, Box } from 'theme-ui';
+import { jsx, Container, Box, Heading, } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import UltimateFeature from 'components/cards/ultimate-feature';
 
-import bulb from 'assets/images/icons/bulb.png';
-import dart from 'assets/images/icons/dart.png';
-import rocket from 'assets/images/icons/rocket.png';
-import trophy from 'assets/images/icons/trophy.png';
+import qr from 'assets/images/icons/qr.png';
+import adminpanel from 'assets/images/icons/admin.png';
+import report from 'assets/images/icons/report.png';
+import userfriendly from 'assets/images/icons/userfriendly.png';
 
 const data = [
   {
     id: 1,
-    icon: bulb,
+    icon: qr,
     title: 'QR Code Integration',
     description: 'Enable seamless attendance marking using QR codes for efficient and accurate tracking.',
   },
   {
     id: 2,
-    icon: dart,
+    icon: adminpanel,
     title: 'User-Friendly Interface',
     description: 'Intuitive and easy-to-use platform for students, lecturers, and administrators.',
   },
   {
     id: 3,
-    icon: rocket,
+    icon: report,
     title: 'Real-time Reporting',
     description: 'Access comprehensive attendance reports instantly for effective monitoring and analysis.',
   },
   {
     id: 4,
-    icon: trophy,
+    icon: userfriendly,
     title: 'Admin Control Panel',
     description: `Empower administrators with advanced management tools and permissions.`,
   },
@@ -38,9 +38,11 @@ export default function About() {
   return (
     <Box as="section" id="about" variant="section.about">
       <Container>
+      <Heading sx={styles.title}>
+        Introducing Checkersy
+      </Heading>
       <SectionHeading
           sx={styles.heading}
-          title="Introducing Checkersy"
           description="Effortless Attendance Management. Our QR-based solution revolutionizes how educational institutions 
           track attendance. Students simply scan the QR code to mark their attendance accurately and instantly. Real-time 
           reporting provides valuable insights for educators. Administrators have full control via an intuitive panel to 
@@ -60,6 +62,7 @@ export default function About() {
 
 const styles = {
   heading: {
+    maxWidth:"800px",
     marginBottom: [60, 60, 60, 80],
   },
   features: {
@@ -72,6 +75,15 @@ const styles = {
       'repeat(2, 1fr)',
       'repeat(4, 1fr)',
     ],
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: ['20px', null, null, null, '24px', '24px', '36px'],
+    lineHeight: 1.33,
+    letterSpacing: '-1px',
+    color: 'textSecondary',
+    textAlign: 'center',
+    mb: ['14px', '16px'],
   },
 };
 
