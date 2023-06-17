@@ -4,8 +4,8 @@ import { jsx, Box, Image, Heading, Text } from 'theme-ui';
 const UltimateFeature = ({ data, ...props }) => {
   return (
     <Box sx={styles.feature} {...props}>
-      <figure>
-        <Image src={data?.icon} alt={data?.title} />
+      <figure >
+        <Image src={data?.icon} alt={data?.title} sx={styles.image}/>
       </figure>
       <Box>
         <Heading as="h4">{data?.title}</Heading>
@@ -19,7 +19,7 @@ export default UltimateFeature;
 
 const styles = {
   feature: {
-    textAlign: ['center', 'center', 'center', 'center', 'left'],
+    textAlign: ['center', 'center', 'center', 'center', 'center'],
     maxWidth: [230, 230, 230, 230, 'none'],
     margin: '0 auto',
     figure: {
@@ -31,7 +31,7 @@ const styles = {
         '0 auto 30px',
         '0 auto 30px',
         '0 auto 30px',
-        '0 0 40px',
+        '0 auto 40px',
       ],
       width: '90px',
       display: 'flex',
