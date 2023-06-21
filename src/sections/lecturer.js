@@ -4,34 +4,39 @@ import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
 import Image from 'components/image';
 
-import banner from 'assets/images/widgets.png';
+import lecturer from 'assets/images/lecturer.jpg';
 import checkFilledCircle from 'assets/images/icons/check-circle-filled.png';
 
-const Widgets = () => {
+const Lecturer = () => {
   return (
     <Box as="section" id="widgets" variant="section.widgets">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.leftContent}>
-            <Image src={banner} alt="widgets" />
+            <Image src={lecturer} alt="widgets" />
           </Box>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Ultimate widgets of collection that will be used anywhere"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              title="Features for Lecturers"
+              description="Simplify attendance marking and focus on what you love—teaching. Checkersy automates the attendance process, making it efficient and hassle-free."
             />
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Unlimited design possibility
+              Save time: Eliminate manual attendance, reduce admin work.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Completely responsive features
+              Precise attendance: Reliable QR code scanning, minimal errors.            
             </Text>
-            <Box sx={styles.explore}>
-              <LearnMore path="#!" label="Explore More" />
-            </Box>
+            <Text sx={styles.listItem} as="p">
+              <Image src={checkFilledCircle} alt="check icon" />
+              Real-time count: Instantly track class attendance.            
+            </Text>
+            <Text sx={styles.listItem} as="p">
+              <Image src={checkFilledCircle} alt="check icon" />
+              Easy manual addition: Add attendance for students with device issues.
+            </Text>
           </Box>
         </Box>
       </Container>
@@ -39,7 +44,7 @@ const Widgets = () => {
   );
 };
 
-export default Widgets;
+export default Lecturer;
 
 const styles = {
   contentWrapper: {
@@ -50,6 +55,7 @@ const styles = {
   },
   heading: {
     textAlign: 'left',
+    fontWeight: 500,
     mb: ['20px'],
     mt: [0, 0, 0, 0, '-70px'],
     h2: {
@@ -66,6 +72,9 @@ const styles = {
     alignItems: 'center',
     img: {
       mr: '10px',
+      mt: '15px',
+      mb: 'auto',
+      minWidth: 'auto',
     },
   },
   explore: {

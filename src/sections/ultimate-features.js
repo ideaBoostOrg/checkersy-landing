@@ -39,11 +39,6 @@ const UltimateFeatures = () => {
   return (
     <Box as="section" id="ultimate-feature" variant="section.ultimateFeature">
       <Container>
-        <SectionHeading
-          sx={styles.heading}
-          title="Go Beyond unlimited features"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred format."
-        />
         <Box sx={styles.features}>
           {data?.map((item) => (
             <UltimateFeature key={item.id} data={item} />

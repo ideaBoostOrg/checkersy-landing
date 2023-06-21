@@ -114,7 +114,7 @@ export default {
       pb: [7, 7, 7, 7, 150],
     },
     widgets: {
-      backgroundColor: '#FFF7F5',
+      backgroundColor: '#FFFFFF',
       pt: [7, 7, 7, 7, 8],
       pb: [7, 7, 7, 7, 6, 8],
     },
@@ -122,9 +122,17 @@ export default {
       pt: [7, 7, 7, 7, 8],
       pb: [6, 6, 6, 8],
     },
-    faq: {
-      pt: [6, 6, 6, 8],
-      pb: [7, 7, 7, 7, 150],
+    about: {
+      pt: [5, 5, 5, 5, 6],
+      // pb: [5, 5, 5, 5, 6],
+    },
+    product: {
+      // pt: [5, 5, 5, 5, 6],
+      // pb: [0, 0, 0, 0, 0],
+    },
+    featureset:{
+      // pt: [3, 3, 3, 3, 4],
+      // pb: [5, 5, 5, 5, 6],
     },
   },
   text: {

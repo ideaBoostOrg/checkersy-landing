@@ -8,9 +8,14 @@ import UltimateFeatures from 'sections/ultimate-features';
 import Features from 'sections/features';
 import IntroVideo from 'sections/intro-video';
 import UsefulFeatures from 'sections/useful-features';
-import Widgets from 'sections/widgets';
 import Pricing from 'sections/pricing';
-import Faq from 'sections/faq';
+import Lecturer from 'sections/lecturer';
+import Admin from 'sections/admin';
+import Student from 'sections/student';
+import About from 'sections/about';
+import Product from 'sections/product';
+import Featureset from 'sections/featureset';
+
 
 export default function IndexPage() {
   return (
@@ -18,13 +23,17 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Startup Landing 010" />
         <Banner />
-        <UltimateFeatures />
+        <About />
+        <Product />
+        {/* <UltimateFeatures />
         <Features />
         <IntroVideo />
-        <UsefulFeatures />
-        <Widgets />
-        <Pricing />
-        <Faq />
+        <UsefulFeatures /> */}
+        {/* <Student />
+        <Lecturer />
+        <Admin /> */}
+        <Featureset />
+        {/* <Pricing /> */}
       </Layout>
     </ThemeProvider>
   );
