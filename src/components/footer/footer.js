@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Text, Container } from 'theme-ui';
+import { jsx, Box, Text, Container } from "theme-ui";
 import Logo from 'components/logo';
 import { Link } from 'components/link';
 import FooterWidget from 'components/footer-widget';
@@ -11,132 +11,144 @@ import visitus from 'assets/images/icons/visitUs.png';
 import linkedin from 'assets/images/icons/linkedin_logo.png';
 import IdeaBoost from 'components/ideaboost'
 
+
+/** @jsx jsx */
+// import FooterLogo from "assets/logo.png";
+// import { Link } from "components/link";
+import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { jsx, Box, Container, Image, Text } from "theme-ui";
+import data from "./footer.data";
+
 export default function Footer() {
   return (
-    <Box as="footer" variant="layout.footer">
+    <footer sx={styles.footer}>
       <Container>
-      </Container>
-      <Container>
-        <Box sx={styles.footerInner}>
-          <Box sx={styles.copyright}>
-            <Logo />
-          </Box>          
-          <Box sx={styles.logo}>
-            <IdeaBoost />
-            <Text as="span">
-              Powered by IdeaBoost
-            </Text>
+        {/* End of footer widgets area */}
+        <Box sx={styles.footer.footerBottomArea}>
+          <Link path="/">
+            <Image src={Logo} alt="Logo" width="220px" />
+          </Link>
+          <Box sx={styles.footer.menus}>
+            <nav>
+              {data.menuItem.map(({ path, label }, i) => (
+                <ScrollLink
+                  activeClass="active"
+                  to={path}
+                  key={i}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  sx={styles.footer.link}
+                >
+                  {label}
+                </ScrollLink>
+              ))}
+            </nav>
           </Box>
-          <Box as="ul" sx={styles.footerNav}>
-              <a href={'mailto:contactus@ideaboost.tech'} label={'contactus@ideaboost.tech'} variant="footer" sx={styles.link}>
-                <Image sx={styles.footerNavImg} src={email} alt="widgets" />
-              </a>
-              <a href={'https://ideaboost.tech'} variant="footer" sx={styles.linkVisit}>
-                <Image sx={styles.footerNavImg} src={visitus} alt="widgets" />
-              </a>
-              <a href={'https://www.linkedin.com/company/ideaboosts/'} variant="footer" sx={styles.link}>
-                <Image sx={styles.footerNavImg} src={linkedin} alt="widgets" />
-              </a>
-          </Box>    
+          <Box>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/ideaboostlab"
+            >
+              <BsLinkedin size={18} sx={styles.footer.icons} />
+            </a>
+            <a target="_blank" href="https://github.com/ideaBoostOrg">
+              <BsGithub size={18} sx={styles.footer.icons} />
+            </a>
+            <a target="_blank" href="https://medium.com/@ideaboosts">
+              <BsMedium size={18} sx={styles.footer.icons} />
+            </a>
+          </Box>
+          <Text sx={styles.footer.copyright}>
+            Copyright by {new Date().getFullYear()} ideaBoost
+          </Text>
         </Box>
       </Container>
-    </Box>
+    </footer>
   );
 }
 
 const styles = {
-  footerTopInner: {
-    gap: [50, null, null, null, 17, 50],
-    mb: [50],
-    display: ['grid'],
-    gridTemplateColumns: [
-      'repeat(2, 1fr)',
-      null,
-      null,
-      'repeat(3, 1fr)',
-      'repeat(5, 1fr)',
-    ],
-    '@media only screen and (max-width < 800px)': {
-      display: ['flex'],
-      flexDirection: ['column'],
+  footer: {
+    footerBottomArea: {
+      borderTop: "1px solid",
+      borderTopColor: "border_color",
+      display: "flex",
+      pt: [5, null, 4],
+      pb: ["40px", null, "0"],
+      textAlign: "center",
+      flexDirection: "column",
     },
-  },
-  footerInner: {
-    borderTop: `1px solid #D9E0E7`,
-    display: ['flex', null, 'flex'],
-    flexDirection: ['row'],
-    justifyContent: 'space-between',
-    padding: '35px 0 40px',
-    '@media only screen and (max-width: 400px)': {
-      pb: 10,
-    },
-    pl: ['10px'],
-  },
-  copyright: {
-    display: ['flex'],
-    alignItems: 'center',
-    flexDirection: ['column', null, null, null, 'row'],
-    span: {
-      fontSize: '14px',
-      lineHeight: 1.29,
-      color: rgba('#0F2137', 0.6),
-      mt: ['18px', '18px', '7px'],
-    },
-  },
-  logo: {
-    display: ['flex'],
-    alignItems: 'center',
-    flexDirection: ['column', null, null, null, 'column'],
-    span: {
-      fontSize: '14px',
-      lineHeight: 1.29,
-      color: rgba('#0F2137', 0.6),
-    },
-  },
-  footerNav: {
-    listStyle: 'none',
-    margin: ['15px 0 0', '15px 0 0', '0'],
-    padding: 0,
-    display: ['flex'],
-    flexDirection: ['row'],
-    flexWrap: ['wrap', null, null, 'unset'],
-    justifyContent: ['center', null, 'flex-start'],
-    'li + li': {
-      '@media only screen and (max-width: 400px)': {
-        mb: '10px',
+    menus: {
+      mt: [1, 1],
+      mb: 2,
+      nav: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
       },
     },
-    a: {
-      color: 'textSecondary',
+    icons: {
+      mr:"10px",
+      cursor:"pointer",
+      ":hover": {
+        color: "#007dfe",
+      },
     },
-    cursor: 'pointer',
+    link: {
+      fontSize: [1, "15px"],
+      color: "text",
+      fontWeight: "400",
+      mb: 2,
+      cursor: "pointer",
+      transition: "all 0.35s",
+      display: "block",
+      textDecoration: "none",
+      lineHeight: [1.5, null, 1.8],
+      px: [2, null, 4],
+      ":hover": {
+        color: "primary",
+      },
+    },
+    copyright: {
+      fontSize: [1, "15px"],
+      width: "100%",
+    },
   },
-  footerNavList: {
-    display: ['flex'],
-    flexDirection: ['row'],
+  widgets: {
+    py: [8, null, 9],
+    px: [4, 0, 3, null, 7, 10],
+    width: ["100%", "80%", "100%"],
+    mx: "auto",
+    gridGap: ["40px 0", null, "45px 30px", null, "60px 30px", "50px 90px"],
+    gridTemplateColumns: [
+      "repeat(1,1fr)",
+      null,
+      "repeat(2,1fr)",
+      "repeat(3,1fr)",
+    ],
+    widgetItem: {
+      textAlign: "center",
+    },
+    infoWrapper: {
+      mt: [2, 3, null, 2, 4],
+      mb: -1,
+      h3: {
+        fontSize: [3, null, null, 2, 3, 4],
+        color: "heading_secondary",
+        lineHeight: 1.4,
+        fontWeight: 700,
+        mb: [2, null, null, null, "15px"],
+      },
+
+      p: {
+        fontSize: [1, "15px"],
+        fontWeight: 400,
+        lineHeight: 2,
+      },
+    },
   },
-  footerNavImg: {
-    width: ['30px'],
-    height: ['30px'],
-    display: 'flex',
-    mt: 'auto',
-    mb: 'auto',
-    mr: '15px',
-  },
-  footerCopyRight: {
-    ml: '5px',
-  },
-  linkVisit:{
-    textDecoration: 'none',
-    fontSize: ' 11pt',
-    mt: ['auto'],
-    mb: ['auto'],
-  },
-  link:{
-    textDecoration: 'none',
-    fontSize: ' 11pt',
-    mt: ['auto'],
-    mb: ['auto'],
-    scale: 1.2,
-  }
 };
