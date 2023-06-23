@@ -15,13 +15,14 @@ import Student from 'sections/student';
 import About from 'sections/about';
 import Product from 'sections/product';
 import Featureset from 'sections/featureset';
+import CallToAction from 'sections/call-to-action';
 
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Startup Landing 010" />
+        <SEO title="Checkersy" />
         <Banner />
         <About />
         <Product />
@@ -34,6 +35,7 @@ export default function IndexPage() {
         <Admin /> */}
         <Featureset />
         {/* <Pricing /> */}
+        <CallToAction/>
       </Layout>
     </ThemeProvider>
   );
