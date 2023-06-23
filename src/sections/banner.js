@@ -52,11 +52,11 @@ const styles = {
     pt: [100, null, null, 120, 130, 120, 0],
   },
   content: {
-    maxWidth: [507, null, null, 324, 450],
+    maxWidth: [507, null, null, 324, 650],
   },
   title: {
     fontWeight: 'bold',
-    fontSize: ['30px', null, null, null, '42px', '40px', '60px'],
+    fontSize: ['30px', null, null, null, '42px', '40px', '50px'],
     lineHeight: 1.33,
     letterSpacing: '-1px',
     color: 'textSecondary',
@@ -71,6 +71,7 @@ const styles = {
     display: ['none', 'flex'],
     mt: [45, 45, 45, 25, 25],
     backgroundColor: "#2ED573",
+    borderRadius:['30px'],
   },
   clients: {
     display: 'flex',
@@ -85,7 +86,7 @@ const styles = {
   },
   illustration: {
     display: ['block', 'block'],
-    mt: ['30px', '30px', 0],
+    mt: ['30px', '30px', '30px'],
     mb: ['60px', '60px', 0],
     img: {
       maxWidth: ['100%', '100%', '100%', '100%', '90%', '90%', '100%'],
