@@ -12,9 +12,6 @@ const Lecturer = () => {
     <Box as="section" id="widgets" variant="section.widgets">
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.leftContent}>
-            <Image src={lecturer} alt="widgets" />
-          </Box>
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
@@ -27,16 +24,20 @@ const Lecturer = () => {
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Precise attendance: Reliable QR code scanning, minimal errors.            
+              Precise attendance: Reliable QR code scanning, minimal errors.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Real-time count: Instantly track class attendance.            
+              Real-time count: Instantly track class attendance.
             </Text>
             <Text sx={styles.listItem} as="p">
               <Image src={checkFilledCircle} alt="check icon" />
-              Easy manual addition: Add attendance for students with device issues.
+              Easy manual addition: Add attendance for students with device
+              issues.
             </Text>
+          </Box>
+          <Box sx={styles.leftContent}>
+            <Image src={lecturer} alt="widgets" />
           </Box>
         </Box>
       </Container>
