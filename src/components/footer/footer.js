@@ -1,23 +1,10 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from "theme-ui";
-import Logo from 'components/logo';
+import Logo from 'assets/images/ideaboost.png';
 import { Link } from 'components/link';
-import FooterWidget from 'components/footer-widget';
-import { menuItems, footerNav } from './footer.data';
-import { rgba } from 'polished';
 import Image from 'components/image';
-import email from 'assets/images/icons/email.webp';
-import visitus from 'assets/images/icons/visitUs.png';
-import linkedin from 'assets/images/icons/linkedin_logo.png';
-import IdeaBoost from 'components/ideaboost'
-
-
-/** @jsx jsx */
-// import FooterLogo from "assets/logo.png";
-// import { Link } from "components/link";
-import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-// import { jsx, Box, Container, Image, Text } from "theme-ui";
 import data from "./footer.data";
 
 export default function Footer() {
@@ -52,13 +39,13 @@ export default function Footer() {
               target="_blank"
               href="https://www.linkedin.com/company/ideaboostlab"
             >
-              <BsLinkedin size={18} sx={styles.footer.icons} />
+              <FaLinkedin size={18} sx={styles.footer.icons} />
             </a>
             <a target="_blank" href="https://github.com/ideaBoostOrg">
-              <BsGithub size={18} sx={styles.footer.icons} />
+              <FaGithub size={18} sx={styles.footer.icons} />
             </a>
             <a target="_blank" href="https://medium.com/@ideaboosts">
-              <BsMedium size={18} sx={styles.footer.icons} />
+              <FaMedium size={18} sx={styles.footer.icons} />
             </a>
           </Box>
           <Text sx={styles.footer.copyright}>
@@ -93,6 +80,7 @@ const styles = {
     },
     icons: {
       mr:"10px",
+      color: "black",
       cursor:"pointer",
       ":hover": {
         color: "#007dfe",
