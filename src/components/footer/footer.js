@@ -60,7 +60,7 @@ export default function Footer() {
 const styles = {
   footer: {
     footerBottomArea: {
-      borderTop: "1px solid",
+      // borderTop: "1px solid",
       borderTopColor: "border_color",
       display: "flex",
       pt: [5, null, 4],

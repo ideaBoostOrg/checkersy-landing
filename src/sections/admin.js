@@ -50,7 +50,7 @@ const styles = {
   contentWrapper: {
     gap: [0, 0, 0, 0, 10, 100],
     display: ['block', 'block', 'grid'],
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1.5fr 2fr',
     alignItems: 'center',
   },
   heading: {

@@ -12,7 +12,7 @@ export default function IdeaBoost({ isWhite }) {
         variant: 'links.logo',
       }}
     >
-      <Image sx={styles.logo} src={isWhite ? logoWhite : logo} alt="startup landing logo" />
+      <Image sx={styles.logo} src={isWhite ? logoWhite : logo} alt="ideaboost checkersy" />
     </Link>
   );
 }

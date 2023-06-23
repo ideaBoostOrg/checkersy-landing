@@ -118,7 +118,7 @@ export default {
     },
     widgets: {
       backgroundColor: '#FFFFFF',
-      pt: [7, 7, 7, 7, 8],
+      pt: [7, 7, 7, 7, 6],
       pb: [7, 7, 7, 7, 6, 8],
     },
     pricing: {
@@ -130,8 +130,8 @@ export default {
       pb: [5, 5, 5, 5, 6],
     },
     product: {
-      pt: [7, 7, 7, 7, 8],
-      pb: [7, 7, 7, 7, 8],
+      pt: [7, 7, 7, 7, 7],
+      pb: [7, 7, 7, 7, 6],
     },
     featureset:{
       // pt: [3, 3, 3, 3, 4],

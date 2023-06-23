@@ -20,7 +20,7 @@ export default UltimateFeature;
 const styles = {
   feature: {
     textAlign: ["center", "center", "center", "center", "center"],
-    maxWidth: [230, 230, 230, 230, "none"],
+    maxWidth: [270, 260, 260, 260, "none"],
     margin: "0 auto",
     boxShadow: 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px',
     borderRadius:['20px'],

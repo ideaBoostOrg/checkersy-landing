@@ -59,7 +59,7 @@ export default Banner;
 
 const styles = {
   contentWrapper: {
-    pt: [100, null, null, 120, 130, 120, 0],
+    pt: [20, null, null, 120, 130, 120, 90],
   },
   container: {
     width: [null, null, null, null, null, null, "1390px"],
