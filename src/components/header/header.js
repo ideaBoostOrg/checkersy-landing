@@ -6,6 +6,8 @@ import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import menuItems from './header.data';
+import CalendlyButton from 'components/CalendlyButton';
+import ExploreBtn from 'components/ExploreBtn';
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -29,7 +31,6 @@ export default function Header() {
           <Container>
             <Box sx={styles.headerInner}>
               <Logo isWhite={mobileMenu} />
-
               <Flex
                 as="nav"
                 sx={styles.navbar}
@@ -50,9 +51,7 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button variant="primaryMd" sx={styles.explore}>
-                  Explore Now
-                </Button>
+                <ExploreBtn/>
               </Flex>
 
               {mobileMenu ? (
@@ -142,14 +141,6 @@ const styles = {
     '.active': {
       color: '#2ED573',
     },
-  },
-  explore: {
-    display: ['block', 'block', 'block', 'block', 'none'],
-    position: 'absolute',
-    bottom: 40,
-    left: '50%',
-    transform: 'translateX(-50%)',
-    backgroundColor: "#2ED573",
   },
   closeButton: {
     height: '32px',

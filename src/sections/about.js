@@ -62,28 +62,28 @@ export default function About() {
 
 const styles = {
   heading: {
-    maxWidth:"800px",
+    maxWidth: "950px",
     marginBottom: [60, 60, 60, 80],
   },
   features: {
-    gap: ['35px 60px', 60, 60, 40, 30, 60],
-    display: ['grid', 'grid'],
+    gap: ["35px 60px", 60, 60, 40, 30, 60],
+    display: ["grid", "grid"],
     gridTemplateColumns: [
-      'repeat(1, 1fr)',
-      'repeat(1, 1fr)',
-      'repeat(1, 1fr)',
-      'repeat(2, 1fr)',
-      'repeat(4, 1fr)',
+      "repeat(1, 1fr)",
+      "repeat(1, 1fr)",
+      "repeat(1, 1fr)",
+      "repeat(2, 1fr)",
+      "repeat(4, 1fr)",
     ],
   },
   title: {
-    fontWeight: 'bold',
-    fontSize: ['20px', null, null, null, '24px', '24px', '36px'],
+    fontWeight: "bold",
+    fontSize: ["20px", null, null, null, "24px", "24px", "36px"],
     lineHeight: 1.33,
-    letterSpacing: '-1px',
-    color: 'textSecondary',
-    textAlign: 'center',
-    mb: ['14px', '16px'],
+    letterSpacing: "-1px",
+    color: "textSecondary",
+    textAlign: "center",
+    mb: ["14px", "16px"],
   },
 };
 
