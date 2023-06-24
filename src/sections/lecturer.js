@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Text } from 'theme-ui';
+import { jsx, Box, Container, Text, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
 import Image from 'components/image';
@@ -50,9 +50,11 @@ export default Lecturer;
 const styles = {
   contentWrapper: {
     gap: [0, 0, 0, 0, 10, 100],
-    display: ['block', 'block', 'grid'],
+    display: ['flex', 'flex', 'grid'],
     gridTemplateColumns: '1fr 1fr',
     alignItems: 'center',
+    justifyContent: "center",
+    flexDirection: ["column-reverse", null, null, "row"],
   },
   heading: {
     textAlign: 'left',
