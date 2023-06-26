@@ -79,7 +79,7 @@ export default {
       padding: '20px 0',
       transition: 'all 0.3s ease-in-out 0s',
       '&.is-mobile-menu': {
-        backgroundColor: 'text',
+        backgroundColor: '#ffffff',
       },
     },
     toolbar: {
