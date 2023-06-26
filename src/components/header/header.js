@@ -55,7 +55,7 @@ export default function Header() {
               </Flex>
 
               {mobileMenu ? (
-                <Button variant="text" sx={styles.closeButton}>
+                <Button sx={styles.closeButton}>
                   <GrClose
                     onClick={closeMobileMenu}
                     color="white"
@@ -83,7 +83,7 @@ const styles = {
         boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
         py: [12],
         '&.is-mobile-menu': {
-          backgroundColor: 'text',
+          backgroundColor: '#ffffff',
         },
       },
     },
@@ -96,7 +96,7 @@ const styles = {
       '.navbar': {
         position: 'absolute',
         top: '100%',
-        backgroundColor: 'text',
+        backgroundColor: '#ffffff',
         width: '100%',
         left: 0,
         p: '20px 30px',
@@ -116,7 +116,7 @@ const styles = {
             marginTop: 5,
           },
           a: {
-            color: 'white',
+            color: 'black',
           },
         },
       },
@@ -148,6 +148,7 @@ const styles = {
     minHeight: 'auto',
     width: '32px',
     ml: '3px',
+    backgroundColor: 'black',
     path: {
       stroke: '#fff',
     },
