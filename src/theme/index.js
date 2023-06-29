@@ -228,6 +228,16 @@ export default {
         bg: 'dark',
       },
     },
+    primaryXS: {
+      variant: 'buttons.default',
+      color: 'white',
+      bg: 'primary',
+      minHeight: ['40px', '40px', '40px', '40px', '40px'],
+      padding: ['0 25px', '0 25px', '0 25px', '0 20px'],
+      '&:hover': {
+        bg: 'dark',
+      },
+    },
     primaryMd: {
       variant: 'buttons.primary',
       minHeight: '50px',
