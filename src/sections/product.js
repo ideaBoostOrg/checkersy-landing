@@ -105,8 +105,8 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    mt: ['5px', '5px', 0],
-    mb: ['100px', '100px', 0],
+    mt: [0, '5px', 0],
+    mb: ['10px', '100px', 0],
     img: {
     maxWidth: ['50%', '50%', '50%', '50%', '40%', '40%', '50%'],
     },

@@ -131,7 +131,7 @@ export default {
     },
     product: {
       pt: [7, 7, 7, 7, 7],
-      pb: [7, 7, 7, 7, 6],
+      pb: [0, 7, 7, 7, 6],
     },
     featureset:{
       // pt: [3, 3, 3, 3, 4],
