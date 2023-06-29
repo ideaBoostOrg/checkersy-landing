@@ -100,6 +100,9 @@ const styles = {
     borderRadius: ["50px"],
     ml: ["20px"],
     backgroundColor: "#2ED573",
+    '@media only screen and (max-width: 768px)': {
+      marginTop: 40,
+    }
   },
 };
 

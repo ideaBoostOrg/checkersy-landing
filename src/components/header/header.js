@@ -143,12 +143,12 @@ const styles = {
     },
   },
   closeButton: {
-    height: '32px',
+    // height: '32px',
     padding: '4px',
     minHeight: 'auto',
-    width: '32px',
-    ml: '3px',
-    backgroundColor: 'black',
+    // width: '32px',
+    // ml: '3px',
+    backgroundColor: '#2ED573',
     path: {
       stroke: '#fff',
     },
