@@ -36,7 +36,7 @@ const ExploreBtn = ({ headerBtn = true }) => {
       onClick={openPopupWidget}
       ml={2}
       sx={styles.explore}
-      variant="buttons.primary"
+      variant="buttons.primaryXS"
     >
       Schedule a Demo
     </Button>
@@ -97,11 +97,15 @@ const styles = {
   explore: {
     display: ["block", "block", "block", "block", "block"],
     bottom: 40,
-    borderRadius: ["50px"],
+    borderRadius: ["5px"],
     ml: ["20px"],
     backgroundColor: "#2ED573",
+    fontWeight: "400",
+    padding:"0 10px",
     '@media only screen and (max-width: 768px)': {
       marginTop: 40,
+      pl: ["10px"],
+      pr: ["10px"],
     }
   },
 };
