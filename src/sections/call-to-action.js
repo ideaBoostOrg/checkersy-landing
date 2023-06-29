@@ -29,7 +29,7 @@ const styles = {
     padding: ["45px 30px 50px", null, null, "45px 50px", null, "45px 70px"],
     mt: [0, null, null, null, "-80px"],
     position: "relative",
-    zIndex: "10",
+    zIndex: "2",
     backgroundColor: "primary",
     backgroundImage: ["none", null, null, null, null, `url(${BgShape})`],
     backgroundRepeat: "no-repeat",
